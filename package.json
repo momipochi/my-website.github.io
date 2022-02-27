@@ -2,7 +2,7 @@
   "name": "my-website-remake",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://momipochi.github.io",
+  "homepage": "https://momipochi.github.io/my-website.github.io",
   "dependencies": {
     "@emotion/react": "^11.8.1",
     "@emotion/styled": "^11.8.1",
