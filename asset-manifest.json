@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/my-website.github.io/static/css/main.5b1efe75.css",
+    "main.css": "/my-website.github.io/static/css/main.574a0ccf.css",
     "main.js": "/my-website.github.io/static/js/main.6f0a2204.js",
     "static/media/900px-Octicons-mark-github.png": "/my-website.github.io/static/media/900px-Octicons-mark-github.f26820dd1d2f2e6ee383.png",
     "static/media/material-design-logo-8BAFEFE50B-seeklogo.com.png": "/my-website.github.io/static/media/material-design-logo-8BAFEFE50B-seeklogo.com.1a7efacabc5af5f141a3.png",
     "index.html": "/my-website.github.io/index.html",
-    "main.5b1efe75.css.map": "/my-website.github.io/static/css/main.5b1efe75.css.map",
+    "main.574a0ccf.css.map": "/my-website.github.io/static/css/main.574a0ccf.css.map",
     "main.6f0a2204.js.map": "/my-website.github.io/static/js/main.6f0a2204.js.map"
   },
   "entrypoints": [
-    "static/css/main.5b1efe75.css",
+    "static/css/main.574a0ccf.css",
     "static/js/main.6f0a2204.js"
   ]
 }
