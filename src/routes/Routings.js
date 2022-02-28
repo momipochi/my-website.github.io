@@ -6,9 +6,9 @@ import About from "../pages/About"
 const Routings = ()=>{
     return (
         <Routes>
-            <Route path={headerNavUrl.aboutme.url} element={<About/>}/>
-            <Route path="/dummy" element={<About/>}/>
-            <Route path="/dummy2" element={<About/>}/>
+            <Route path={headerNavUrl.aboutme.url} element={<About hasContent={true}/>}/>
+            <Route path="/dummy" element={<About hasContent={false}/>}/>
+            <Route path="/dummy2" element={<About hasContent={false}/>}/>
         </Routes>
     )
 }
