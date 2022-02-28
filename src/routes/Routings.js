@@ -7,8 +7,8 @@ const Routings = ()=>{
     return (
         <Routes>
             <Route path={headerNavUrl.aboutme.url} element={<About hasContent={true}/>}/>
-            <Route path="/dummy" element={<About hasContent={false}/>}/>
-            <Route path="/dummy2" element={<About hasContent={false}/>}/>
+            <Route path="/my-website.github.io/dummy" element={<About hasContent={false}/>}/>
+            <Route path="/my-website.github.io/dummy2" element={<About hasContent={false}/>}/>
         </Routes>
     )
 }

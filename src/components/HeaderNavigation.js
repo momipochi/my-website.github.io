@@ -25,12 +25,12 @@ const HeaderNavigation = () => {
               </Button>
             </li>
             <li>
-              <Button component={Link} to="/dummy">
+              <Button component={Link} to="/my-website.github.io/dummy">
                 dumm1
               </Button>
             </li>
             <li>
-              <Button component={Link} to="/dummy2">
+              <Button component={Link} to="/my-website.github.io/dummy2">
                 dummy2
               </Button>
             </li>

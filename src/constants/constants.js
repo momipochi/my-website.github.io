@@ -1,6 +1,6 @@
 export const headerNavUrl = {
     aboutme: {
-        url: '/',
+        url: '/my-website.github.io/',
         text: 'About me'
     },
 }
