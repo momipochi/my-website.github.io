@@ -1,36 +1,21 @@
-// import { content } from "../constants/constants";
+
 import footercss from "../assets/styles/footer.module.css";
 
-import { ImageListItem, ImageList } from "@mui/material";
-import githubLogo from '../assets/images/900px-Octicons-mark-github.png'
-import materialuiLogo from '../assets/images/material-design-logo-8BAFEFE50B-seeklogo.com.png'
+import githubicon from "../assets/images/900px-Octicons-mark-github.png";
+import meterialuiicon from "../assets/images/material-design-logo-8BAFEFE50B-seeklogo.com.png";
+import reacticon from '../assets/images/2507930-middle.png'
 
-
-// const copy = "©me";
+import AvatarButton from "./AvatarButton";
+import { links } from "../constants/constants";
 
 
 const Footer = () => {
   return (
     <div className={footercss.main}>
-      fuck me
-      <div className={footercss.links}>
-      <ImageList sx={{ width: 500, height: 450 }} cols={3} rowHeight={164} gap={10}>
-          <ImageListItem>
-            <img
-              src={githubLogo}
-              alt=''
-              loading="lazy"
-            />
-          </ImageListItem>
-          <ImageListItem>
-          <img
-              src={materialuiLogo}
-              alt=''
-              loading="lazy"
-            />
-          </ImageListItem>
-      </ImageList>
-      </div>
+      <h5>Links</h5>
+      <AvatarButton alt="Github" src={githubicon} url={links.github}/>
+      <AvatarButton alt="Material Ui" src={meterialuiicon} url={links.materialui} />
+      <AvatarButton alt="React" src={reacticon} url={links.react} />
     </div>
   );
 };

@@ -1,12 +1,13 @@
 import { Link } from "react-router-dom";
-import { headerNavUrl,content } from "../constants/constants";
+import { headerNavUrl, content } from "../constants/constants";
 import classes from "../assets/styles/navigationHeader.module.css";
-import { Button, ThemeProvider } from "@mui/material";
-import theme from "../assets/styles/theme";
-
-
+import { ThemeProvider } from "@mui/material";
+import { theme } from "../assets/styles/theme";
+import { useLocation } from "react-router-dom";
+import ActiveHeader from "./ActiveHeader";
 
 const HeaderNavigation = () => {
+  const location = useLocation();
   return (
     <div className={classes.header_menu}>
       <ThemeProvider theme={theme}>
@@ -16,23 +17,31 @@ const HeaderNavigation = () => {
         <nav>
           <ul>
             <li>
-              <Button
+              <ActiveHeader
                 component={Link}
                 to={headerNavUrl.aboutme.url}
                 color="primary"
-              >
-                {headerNavUrl.aboutme.text}
-              </Button>
+                text={headerNavUrl.aboutme.text}
+                location={location}
+              />
             </li>
             <li>
-              <Button component={Link} to="/my-website.github.io/dummy">
-                dumm1
-              </Button>
+              <ActiveHeader
+                component={Link}
+                to={headerNavUrl.portfolio.url}
+                color="primary"
+                text={headerNavUrl.portfolio.text}
+                location={location}
+              />
             </li>
             <li>
-              <Button component={Link} to="/my-website.github.io/dummy2">
-                dummy2
-              </Button>
+              <ActiveHeader
+                component={Link}
+                to="/my-website.github.io/dummy2"
+                color="primary"
+                text="dummy"
+                location={location}
+              />
             </li>
           </ul>
         </nav>

@@ -1,12 +1,15 @@
 import { createTheme } from "@mui/material";
-const theme = createTheme(
-    {
-        palette:{
-            primary: {
-                main: '#E9E9E9'
-            }
-        },
-    }
-)
+export const theme = createTheme({
+  palette: {
+    primary: {
+      main: "#E9E9E9",
+    },
+  },
+});
 
-export default theme
+export const iconLinkTheme = createTheme({
+  sx: {
+    width: 100,
+    height: 100,
+  }
+});
