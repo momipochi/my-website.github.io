@@ -77,7 +77,7 @@ export function findPath(dest) {
   graph.addEdge("BLZ", "GTM");
   graph.addEdge("GTM", "MEX");
   graph.addEdge("GTM", "BLZ");
-  graph.addEdge("GTM", "SLZ");
+  graph.addEdge("GTM", "SLV");
   graph.addEdge("GTM", "HND");
   graph.addEdge("SLV", "GTM");
   graph.addEdge("SLV", "HND");
