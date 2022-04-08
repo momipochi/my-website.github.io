@@ -6,6 +6,10 @@ export const headerNavUrl = {
     portfolio: {
         url: '/my-website.github.io/portfolio',
         text: 'Portfolio'
+    },
+    chrobinson:{
+        url: '/my-website.github.io/chrobinsontask',
+        text: 'CHRobinsonTask'
     }
 }
 export const links = {
