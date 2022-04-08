@@ -15,7 +15,7 @@ function CHRobinsonTask() {
     </div>
   );
 }
-function Graph() {
+export function Graph() {
   this.nodes = {};
 
   this.addEdge = (u, v) => {
@@ -25,8 +25,8 @@ function Graph() {
     this.nodes[u].push(v);
   };
 }
-function shortestPath(graph, origin, destination) {
-  if (origin == destination) {
+export function shortestPath(graph, origin, destination) {
+  if (origin === destination) {
     //if already at destination return origin
     return [origin];
   }
@@ -34,13 +34,13 @@ function shortestPath(graph, origin, destination) {
     visited = new Map(),
     prevNodes = {};
   visited.set(origin, 1);
-  while (nodes.length != 0) {
+  while (nodes.length !== 0) {
     let currNode = nodes.pop(); 
     let childrenNode = graph.nodes[currNode];
     for (let i = 0; i < childrenNode.length; i++) {
       //traverse child nodes of currNode
 
-      if (visited.get(childrenNode[i]) == 1) {
+      if (visited.get(childrenNode[i]) === 1) {
         //continue if node has been visited already
         continue;
       }
@@ -49,7 +49,7 @@ function shortestPath(graph, origin, destination) {
       if (childrenNode[i] === destination) {
         let path = [childrenNode[i]];
 
-        while (currNode != origin) {
+        while (currNode !== origin) {
           //backtracking
           path.push(currNode);
           currNode = prevNodes[currNode];
@@ -65,7 +65,7 @@ function shortestPath(graph, origin, destination) {
   }
 }
 
-function findPath(dest) {
+export function findPath(dest) {
   var graph = new Graph();
   graph.addEdge("CAN", "USA");
   graph.addEdge("USA", "CAN");
@@ -91,18 +91,9 @@ function findPath(dest) {
   graph.addEdge("PAN", "CRI");
 
   dest = dest.toUpperCase();
-  if (graph.nodes[dest] != undefined) {
-    
+  if (graph.nodes[dest] !== undefined) {
     let spath = shortestPath(graph, "CAN", dest);
     return spath
-    // let div = document.getElementById("path");
-    // div.innerHTML = "";
-    // // div.innerHTML = spath.join(" -> ")
-    // for (let i = 1; i < spath.length; i++) {
-    //   let entry = document.createElement("li");
-    //   entry.innerHTML = spath[i];
-    //   div.appendChild(entry);
-    // }
   }
   return null
 }
